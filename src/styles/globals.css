@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-primary: #F4F6F8;
+    --background-surface: #FFFFFF;
+    --background-secondary: #EEF1F5;
+    --border-default: #E0E4EA;
+    --text-primary: #1C2028;
+    --text-secondary: #8A95A3;
+    --accent-primary: #00C8D7;
+    --accent-dark: #00A8B5;
+    --accent-subtle: #E4F9FA;
+  }
+  .dark {
+    --background-primary: #0D1117;
+    --background-surface: #161B22;
+    --background-secondary: #1F2937;
+    --border-default: #2A3340;
+    --text-primary: #E8EDF2;
+    --text-secondary: #6B7685;
+    --accent-primary: #00C8D7;
+    --accent-dark: #00A8B5;
+    --accent-subtle: #003F44;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: var(--background-primary);
+    color: var(--text-primary);
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Syne', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-surface { background-color: var(--background-surface); }
+  .bg-primary { background-color: var(--background-primary); }
+  .bg-secondary { background-color: var(--background-secondary); }
+  .border-default { border-color: var(--border-default); }
+  .text-primary-color { color: var(--text-primary); }
+  .text-secondary-color { color: var(--text-secondary); }
+  .text-accent { color: var(--accent-primary); }
+  .bg-accent-subtle { background-color: var(--accent-subtle); }
+
+  .pcb-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%2300C8D7' stroke-width='0.5' opacity='0.15'%3E%3Cpath d='M10 10h40M10 30h40M10 50h40M10 10v40M30 10v40M50 10v40'/%3E%3Ccircle cx='10' cy='10' r='2'/%3E%3Ccircle cx='30' cy='10' r='2'/%3E%3Ccircle cx='50' cy='10' r='2'/%3E%3Ccircle cx='10' cy='30' r='2'/%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3Ccircle cx='50' cy='30' r='2'/%3E%3Ccircle cx='10' cy='50' r='2'/%3E%3Ccircle cx='30' cy='50' r='2'/%3E%3Ccircle cx='50' cy='50' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+}

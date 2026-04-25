@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "product": "Product",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "team": "Team",
+    "contact": "Contact",
+    "cart": "Cart"
+  },
+  "hero": {
+    "tagline": "Smart diagnostics for circuits. No guessing.",
+    "subtitle": "EVAAH combines computer vision, real-time electrical monitoring and generative AI so any technician can diagnose PCBs in seconds.",
+    "cta1": "See pricing",
+    "cta2": "How it works",
+    "mockup": {
+      "title": "EVAAH Diagnosis",
+      "component": "Capacitor C3",
+      "voltage": "Voltage",
+      "current": "Current",
+      "temp": "Temperature",
+      "status": "Normal",
+      "warning": "Warning",
+      "critical": "Critical"
+    }
+  },
+  "problem": {
+    "title": "The problem",
+    "stat1": { "value": "$50K–$500K MXN", "label": "Cost of a production stoppage" },
+    "stat2": { "value": "Hours or days", "label": "Manual diagnosis time" },
+    "stat3": { "value": "0 tools", "label": "That combine vision + portable electrical monitoring" }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "step1": { "title": "Connect the module", "desc": "Connect the EVAAH hardware to the circuit using precision pogo pin probes." },
+    "step2": { "title": "Take a photo", "desc": "ARGOS identifies components on-device without internet." },
+    "step3": { "title": "Get the diagnosis", "desc": "AI analyzes data and delivers contextual recommendations in seconds." }
+  },
+  "features": {
+    "title": "Key features",
+    "f1": { "title": "ARGOS Vision", "desc": "On-device component detection without internet using YOLOv8n." },
+    "f2": { "title": "Real-time monitoring", "desc": "Continuous voltage, current, temperature and vibration." },
+    "f3": { "title": "AI with real context", "desc": "RAG: the LLM knows your specific circuit." },
+    "f4": { "title": "Preventive alerts", "desc": "Detects trends before failure occurs." },
+    "f5": { "title": "Contextual chat", "desc": "Ask about your circuit status in natural language." },
+    "f6": { "title": "Portable + Industrial", "desc": "6h LiPo battery or 24/7 plant monitoring." }
+  },
+  "pricing": {
+    "title": "Pricing",
+    "subtitle": "Choose the plan that fits your operation",
+    "popular": "Most popular",
+    "addToCart": "Add to cart",
+    "contact": "Contact us",
+    "quote": "Custom quote",
+    "kit": {
+      "name": "Direct Kit",
+      "target": "Technicians & workshops",
+      "price": "$3,499 MXN",
+      "features": ["EVAAH Hardware (ESP32-S3 + sensors + OLED + probes)", "Mobile app included (ARGOS on-device)", "Basic LLM diagnostics", "Email support"]
+    },
+    "b2b": {
+      "name": "B2B Cloud",
+      "target": "Industrial plants",
+      "price": "$1,299 MXN/mo",
+      "features": ["Everything in Direct Kit", "Multi-technician license (up to 10 users)", "Real-time web dashboard", "ARGOS Pro (Gemini Vision analysis)", "Unlimited history + advanced stats", "Priority support"]
+    },
+    "enterprise": {
+      "name": "On-Premise",
+      "target": "Regulated industry",
+      "price": "Custom quote",
+      "features": ["Everything in B2B Cloud", "Dedicated AWS VPC — 100% private data", "Guaranteed SLA", "Personalized onboarding"]
+    }
+  },
+  "team": {
+    "title": "Team",
+    "badge": "InnovaTecNM 2026",
+    "members": [
+      { "name": "Diego Aragón", "role": "Project Lead", "desc": "Backend, AI & Infrastructure" },
+      { "name": "Dulce Niebla", "role": "Frontend Lead", "desc": "Flutter App & UI/UX" },
+      { "name": "Michelle", "role": "Hardware Lead", "desc": "ESP32, sensors & firmware" },
+      { "name": "Kevin Castorena", "role": "Web Developer", "desc": "Website & deployment" },
+      { "name": "Felix", "role": "Hardware", "desc": "Circuit & protoboard" }
+    ],
+    "advisors": [
+      { "name": "Ing. Carlos Valenzuela", "role": "Advisor", "desc": "Documentation & business plan" },
+      { "name": "Dra. Rocío", "role": "Advisor", "desc": "Electronics & technical review" }
+    ]
+  },
+  "footer": {
+    "tagline": "Smart diagnostics for electronic circuits.",
+    "links": "Links",
+    "privacy": "Privacy policy",
+    "credit": "Built by the EVAAH team — InnovaTecNM 2026"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "emptyDesc": "Add a package to get started.",
+    "browse": "Browse packages",
+    "subtotal": "Subtotal",
+    "checkout": "Proceed to checkout",
+    "remove": "Remove",
+    "qty": "Quantity",
+    "modalTitle": "Coming soon!",
+    "modalDesc": "Payment functionality will be available soon. Contact us for a custom quote.",
+    "modalContact": "Contact the team",
+    "modalClose": "Close",
+    "continueShopping": "Continue shopping"
+  },
+  "products": {
+    "title": "All packages",
+    "compare": "Feature comparison",
+    "faq": "Frequently asked questions",
+    "faqItems": [
+      { "q": "Is the mobile app free?", "a": "Yes, the EVAAH app is included in all packages at no extra cost." },
+      { "q": "Does it work offline?", "a": "The ARGOS model runs on-device. Basic monitoring works offline; cloud features require internet." },
+      { "q": "How long does hardware shipping take?", "a": "Shipping across Mexico in 3-7 business days." },
+      { "q": "Can I upgrade my plan later?", "a": "Yes, you can migrate from Direct Kit to B2B Cloud at any time." }
+    ]
+  },
+  "support": {
+    "phone": "618 365 9548",
+    "name": "Diego Aragón — Technical Support"
+  }
+}

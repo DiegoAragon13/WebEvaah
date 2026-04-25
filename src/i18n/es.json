@@ -1,0 +1,124 @@
+{
+  "nav": {
+    "product": "Producto",
+    "howItWorks": "Cómo funciona",
+    "pricing": "Paquetes",
+    "team": "Equipo",
+    "contact": "Contacto",
+    "cart": "Carrito"
+  },
+  "hero": {
+    "tagline": "Diagnóstico inteligente para circuitos. Sin adivinar.",
+    "subtitle": "EVAAH combina visión artificial, monitoreo eléctrico en tiempo real e IA generativa para que cualquier técnico diagnostique placas electrónicas en segundos.",
+    "cta1": "Ver paquetes",
+    "cta2": "Cómo funciona",
+    "mockup": {
+      "title": "Diagnóstico EVAAH",
+      "component": "Capacitor C3",
+      "voltage": "Voltaje",
+      "current": "Corriente",
+      "temp": "Temperatura",
+      "status": "Normal",
+      "warning": "Advertencia",
+      "critical": "Crítico"
+    }
+  },
+  "problem": {
+    "title": "El problema",
+    "stat1": { "value": "$50K–$500K MXN", "label": "Costo de un paro de producción" },
+    "stat2": { "value": "Horas o días", "label": "Tiempo de diagnóstico manual" },
+    "stat3": { "value": "0 herramientas", "label": "Que combinen visión + monitoreo eléctrico portátil" }
+  },
+  "howItWorks": {
+    "title": "Cómo funciona",
+    "step1": { "title": "Conecta el módulo", "desc": "Conecta el hardware EVAAH al circuito mediante sondas de precisión pogo pin." },
+    "step2": { "title": "Toma una foto", "desc": "ARGOS identifica componentes on-device sin necesidad de internet." },
+    "step3": { "title": "Obtén el diagnóstico", "desc": "La IA analiza datos y entrega recomendaciones contextuales en segundos." }
+  },
+  "features": {
+    "title": "Características clave",
+    "f1": { "title": "ARGOS Vision", "desc": "Detección de componentes on-device sin internet con YOLOv8n." },
+    "f2": { "title": "Monitoreo en tiempo real", "desc": "Voltaje, corriente, temperatura y vibración continuos." },
+    "f3": { "title": "IA con contexto real", "desc": "RAG: el LLM conoce tu circuito específico." },
+    "f4": { "title": "Alertas preventivas", "desc": "Detecta tendencias antes de que ocurra la falla." },
+    "f5": { "title": "Chat contextual", "desc": "Pregunta sobre el estado de tu circuito en lenguaje natural." },
+    "f6": { "title": "Portátil + Industrial", "desc": "LiPo 6h de autonomía o monitoreo 24/7 en planta." }
+  },
+  "pricing": {
+    "title": "Paquetes",
+    "subtitle": "Elige el plan que se adapta a tu operación",
+    "popular": "Más popular",
+    "addToCart": "Agregar al carrito",
+    "contact": "Contactar",
+    "quote": "Cotización personalizada",
+    "kit": {
+      "name": "Kit Directo",
+      "target": "Técnicos y talleres",
+      "price": "$3,499 MXN",
+      "features": ["Hardware EVAAH (ESP32-S3 + sensores + OLED + sondas)", "App móvil incluida (ARGOS on-device)", "Diagnósticos básicos con LLM", "Soporte por email"]
+    },
+    "b2b": {
+      "name": "B2B Cloud",
+      "target": "Plantas industriales",
+      "price": "$1,299 MXN/mes",
+      "features": ["Todo lo del Kit Directo", "Licencia multi-técnico (hasta 10 usuarios)", "Dashboard web en tiempo real", "ARGOS Pro (análisis con Gemini Vision)", "Historial ilimitado + estadísticas avanzadas", "Soporte prioritario"]
+    },
+    "enterprise": {
+      "name": "On-Premise",
+      "target": "Industria regulada",
+      "price": "Cotización",
+      "features": ["Todo lo del B2B Cloud", "VPC dedicada en AWS — datos 100% privados", "SLA garantizado", "Onboarding personalizado"]
+    }
+  },
+  "team": {
+    "title": "Equipo",
+    "badge": "InnovaTecNM 2026",
+    "members": [
+      { "name": "Diego Aragón", "role": "Líder de proyecto", "desc": "Backend, IA & Infraestructura" },
+      { "name": "Dulce Niebla", "role": "Frontend Lead", "desc": "App Flutter & UI/UX" },
+      { "name": "Michelle", "role": "Hardware Lead", "desc": "ESP32, sensores & firmware" },
+      { "name": "Kevin Castorena", "role": "Web Developer", "desc": "Sitio web & despliegue" },
+      { "name": "Felix", "role": "Hardware", "desc": "Circuito & protoboard" }
+    ],
+    "advisors": [
+      { "name": "Ing. Carlos Valenzuela", "role": "Asesor", "desc": "Documentación & plan de negocios" },
+      { "name": "Dra. Rocío", "role": "Asesora", "desc": "Electrónica & revisión técnica" }
+    ]
+  },
+  "footer": {
+    "tagline": "Diagnóstico inteligente para circuitos electrónicos.",
+    "links": "Enlaces",
+    "privacy": "Política de privacidad",
+    "credit": "Desarrollado por el equipo EVAAH — InnovaTecNM 2026"
+  },
+  "cart": {
+    "title": "Tu carrito",
+    "empty": "Tu carrito está vacío",
+    "emptyDesc": "Agrega un paquete para comenzar.",
+    "browse": "Ver paquetes",
+    "subtotal": "Subtotal",
+    "checkout": "Proceder al pago",
+    "remove": "Eliminar",
+    "qty": "Cantidad",
+    "modalTitle": "¡Próximamente!",
+    "modalDesc": "La funcionalidad de pago estará disponible pronto. Contáctanos para cotización personalizada.",
+    "modalContact": "Contactar al equipo",
+    "modalClose": "Cerrar",
+    "continueShopping": "Seguir comprando"
+  },
+  "products": {
+    "title": "Todos los paquetes",
+    "compare": "Comparativa de características",
+    "faq": "Preguntas frecuentes",
+    "faqItems": [
+      { "q": "¿La app móvil es gratuita?", "a": "Sí, la app EVAAH está incluida en todos los paquetes sin costo adicional." },
+      { "q": "¿Funciona sin conexión a internet?", "a": "El modelo ARGOS corre on-device. El monitoreo básico funciona sin internet; las funciones cloud requieren conexión." },
+      { "q": "¿Cuánto tarda el envío del hardware?", "a": "Envíos a toda la República Mexicana en 3-7 días hábiles." },
+      { "q": "¿Puedo actualizar mi plan después?", "a": "Sí, puedes migrar de Kit Directo a B2B Cloud en cualquier momento." }
+    ]
+  },
+  "support": {
+    "phone": "618 365 9548",
+    "name": "Diego Aragón — Soporte Técnico"
+  }
+}
