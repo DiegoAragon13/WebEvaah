@@ -1,6 +1,6 @@
-# EVAAH Web
+# NEMIKI Web
 
-Sitio web oficial de EVAAH — Sistema inteligente de diagnóstico de placas electrónicas.
+Sitio web oficial de NEMIKI — Sistema inteligente de diagnóstico de placas electrónicas.
 
 ## Stack tecnológico
 

@@ -5,7 +5,7 @@ import en from './en.json'
 
 i18n.use(initReactI18next).init({
   resources: { es: { translation: es }, en: { translation: en } },
-  lng: localStorage.getItem('evaah-lang') || 'es',
+  lng: localStorage.getItem('nemiki-lang') || 'es',
   fallbackLng: 'es',
   interpolation: { escapeValue: false },
 })

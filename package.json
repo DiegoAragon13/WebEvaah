@@ -1,5 +1,5 @@
 {
-  "name": "evaah-web",
+  "name": "nemiki-web",
   "private": true,
   "version": "0.1.0",
   "type": "module",
@@ -10,6 +10,8 @@
     "lint": "eslint . --ext ts,tsx"
   },
   "dependencies": {
+    "embla-carousel-autoplay": "^8.5.2",
+    "embla-carousel-react": "^8.5.2",
     "framer-motion": "^11.0.0",
     "i18next": "^23.0.0",
     "lucide-react": "^0.400.0",

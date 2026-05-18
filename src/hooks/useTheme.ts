@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 
 export function useTheme() {
   const getInitial = (): 'dark' | 'light' => {
-    const saved = localStorage.getItem('evaah-theme')
+    const saved = localStorage.getItem('nemiki-theme')
     if (saved === 'light' || saved === 'dark') return saved
-    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+    return 'light'
   }
 
   const [theme, setTheme] = useState<'dark' | 'light'>(getInitial)
@@ -16,7 +16,7 @@ export function useTheme() {
     } else {
       root.classList.remove('dark')
     }
-    localStorage.setItem('evaah-theme', theme)
+    localStorage.setItem('nemiki-theme', theme)
   }, [theme])
 
   const toggle = () => setTheme(t => (t === 'dark' ? 'light' : 'dark'))

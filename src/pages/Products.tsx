@@ -5,9 +5,10 @@ import { Pricing } from '../components/sections/Pricing'
 import { Accordion } from '../components/ui/Accordion'
 
 const compareFeatures = [
-  { feature: 'Hardware EVAAH', kit: true, b2b: true, enterprise: true },
-  { feature: 'App móvil ARGOS', kit: true, b2b: true, enterprise: true },
-  { feature: 'Diagnóstico LLM básico', kit: true, b2b: true, enterprise: true },
+  { feature: 'Módulo hardware NEMIKI', kit: true, b2b: true, enterprise: true },
+  { feature: 'App móvil ARGOS (on-device)', kit: true, b2b: true, enterprise: true },
+  { feature: 'Diagnóstico LLM + RAG', kit: true, b2b: true, enterprise: true },
+  { feature: 'Análisis Weibull de vida útil', kit: false, b2b: true, enterprise: true },
   { feature: 'Multi-usuario (hasta 10)', kit: false, b2b: true, enterprise: true },
   { feature: 'Dashboard web', kit: false, b2b: true, enterprise: true },
   { feature: 'ARGOS Pro (Gemini Vision)', kit: false, b2b: true, enterprise: true },

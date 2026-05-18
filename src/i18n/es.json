@@ -9,11 +9,11 @@
   },
   "hero": {
     "tagline": "Diagnóstico inteligente para circuitos. Sin adivinar.",
-    "subtitle": "EVAAH combina visión artificial, monitoreo eléctrico en tiempo real e IA generativa para que cualquier técnico diagnostique placas electrónicas en segundos.",
+    "subtitle": "NEMIKI combina visión artificial, monitoreo eléctrico en tiempo real e IA generativa para que cualquier técnico diagnostique placas electrónicas en segundos.",
     "cta1": "Ver paquetes",
     "cta2": "Cómo funciona",
     "mockup": {
-      "title": "Diagnóstico EVAAH",
+      "title": "Diagnóstico NEMIKI",
       "component": "Capacitor C3",
       "voltage": "Voltaje",
       "current": "Corriente",
@@ -31,7 +31,7 @@
   },
   "howItWorks": {
     "title": "Cómo funciona",
-    "step1": { "title": "Conecta el módulo", "desc": "Conecta el hardware EVAAH al circuito mediante sondas de precisión pogo pin." },
+    "step1": { "title": "Conecta el módulo", "desc": "Conecta el hardware NEMIKI al circuito mediante sondas de precisión pogo pin." },
     "step2": { "title": "Toma una foto", "desc": "ARGOS identifica componentes on-device sin necesidad de internet." },
     "step3": { "title": "Obtén el diagnóstico", "desc": "La IA analiza datos y entrega recomendaciones contextuales en segundos." }
   },
@@ -54,20 +54,23 @@
     "kit": {
       "name": "Kit Directo",
       "target": "Técnicos y talleres",
-      "price": "$3,499 MXN",
-      "features": ["Hardware EVAAH (ESP32-S3 + sensores + OLED + sondas)", "App móvil incluida (ARGOS on-device)", "Diagnósticos básicos con LLM", "Soporte por email"]
+      "price": "$2,000 MXN",
+      "priceNote": "+ $1,500 MXN/mes",
+      "features": ["Módulo hardware NEMIKI (ESP32-S3 + sensores industriales + OLED + sondas)", "App móvil incluida (ARGOS on-device, sin internet)", "Diagnósticos con LLM + RAG contextual", "Monitoreo de voltaje, corriente, temperatura y vibración", "Soporte por email"]
     },
     "b2b": {
       "name": "B2B Cloud",
       "target": "Plantas industriales",
-      "price": "$1,299 MXN/mes",
-      "features": ["Todo lo del Kit Directo", "Licencia multi-técnico (hasta 10 usuarios)", "Dashboard web en tiempo real", "ARGOS Pro (análisis con Gemini Vision)", "Historial ilimitado + estadísticas avanzadas", "Soporte prioritario"]
+      "price": "$1,500 MXN/mes",
+      "priceNote": "por módulo activo",
+      "features": ["Todo lo del Kit Directo", "Licencia multi-técnico (hasta 10 usuarios)", "Dashboard web en tiempo real", "ARGOS Pro (análisis con Gemini Vision)", "Historial ilimitado + estadísticas avanzadas", "Análisis Weibull de vida útil", "Soporte prioritario"]
     },
     "enterprise": {
       "name": "On-Premise",
       "target": "Industria regulada",
       "price": "Cotización",
-      "features": ["Todo lo del B2B Cloud", "VPC dedicada en AWS — datos 100% privados", "SLA garantizado", "Onboarding personalizado"]
+      "priceNote": "personalizada",
+      "features": ["Todo lo del B2B Cloud", "VPC dedicada en AWS — datos 100% privados", "SLA garantizado", "Onboarding personalizado", "Certificación NOM-001-SEDE-2012 y NOM-029-STPS-2011", "Integración con sistemas MRO existentes"]
     }
   },
   "team": {
@@ -85,11 +88,31 @@
       { "name": "Dra. Rocío", "role": "Asesora", "desc": "Electrónica & revisión técnica" }
     ]
   },
+  "about": {
+    "label": "Quiénes somos",
+    "headline": "El copiloto del técnico industrial.",
+    "intro": "Nacimos de la industria mexicana para resolver el problema que más le cuesta: los paros no planificados.",
+    "philosophy": "Filosofía",
+    "philosophyText": "NEMIKI viene del náhuatl: \"caminar junto\". No reemplazamos al técnico — caminamos a su lado. La IA es el copiloto; el técnico, el piloto.",
+    "philosophyFooter": "Diseñado para la industria mexicana real",
+    "mission": "Misión",
+    "missionText": "Empoderar a los técnicos de mantenimiento industrial con un copiloto inteligente que combina IoT en tiempo real, visión artificial e IA generativa para anticipar fallas electrónicas antes de que ocurran.",
+    "vision": "Visión",
+    "visionText": "Ser la plataforma de mantenimiento predictivo de referencia en Latinoamérica para 2030, transformando el mantenimiento correctivo en una ventaja competitiva digital para la manufactura avanzada.",
+    "objectives": "Objetivos",
+    "objectivesList": [
+      "Reducir tiempos de paro no planificados mediante diagnóstico predictivo en tiempo real.",
+      "Democratizar el mantenimiento predictivo para la PyME industrial mexicana.",
+      "Integrar IoT, visión artificial e IA generativa en una herramienta unificada.",
+      "Extender la vida útil de equipos electrónicos y reducir residuos industriales.",
+      "Ser el estándar de diagnóstico electrónico en los polos industriales de México."
+    ]
+  },
   "footer": {
     "tagline": "Diagnóstico inteligente para circuitos electrónicos.",
     "links": "Enlaces",
     "privacy": "Política de privacidad",
-    "credit": "Desarrollado por el equipo EVAAH — InnovaTecNM 2026"
+    "credit": "Desarrollado por el equipo NEMIKI — InnovaTecNM 2026"
   },
   "cart": {
     "title": "Tu carrito",
@@ -111,7 +134,7 @@
     "compare": "Comparativa de características",
     "faq": "Preguntas frecuentes",
     "faqItems": [
-      { "q": "¿La app móvil es gratuita?", "a": "Sí, la app EVAAH está incluida en todos los paquetes sin costo adicional." },
+      { "q": "¿La app móvil es gratuita?", "a": "Sí, la app NEMIKI está incluida en todos los paquetes sin costo adicional." },
       { "q": "¿Funciona sin conexión a internet?", "a": "El modelo ARGOS corre on-device. El monitoreo básico funciona sin internet; las funciones cloud requieren conexión." },
       { "q": "¿Cuánto tarda el envío del hardware?", "a": "Envíos a toda la República Mexicana en 3-7 días hábiles." },
       { "q": "¿Puedo actualizar mi plan después?", "a": "Sí, puedes migrar de Kit Directo a B2B Cloud en cualquier momento." }

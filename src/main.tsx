@@ -3,10 +3,9 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './styles/globals.css'
 
-// Apply dark theme by default before render
-const saved = localStorage.getItem('evaah-theme')
-const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-if (saved === 'dark' || (!saved && prefersDark) || !saved) {
+// Apply theme — default is light
+const saved = localStorage.getItem('nemiki-theme')
+if (saved === 'dark') {
   document.documentElement.classList.add('dark')
 }
 

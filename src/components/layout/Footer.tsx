@@ -9,7 +9,7 @@ export function Footer() {
   const toggleLang = () => {
     const next = i18n.language === 'es' ? 'en' : 'es'
     i18n.changeLanguage(next)
-    localStorage.setItem('evaah-lang', next)
+    localStorage.setItem('nemiki-lang', next)
   }
 
   return (
@@ -17,14 +17,14 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <span className="font-display font-extrabold text-2xl text-[#00C8D7]">EVAAH</span>
+            <span className="font-display font-extrabold text-2xl text-[#00C8D7]">NEMIKI</span>
             <p className="mt-2 text-sm text-[var(--text-secondary)]">{t('footer.tagline')}</p>
           </div>
           <div>
             <h4 className="font-semibold text-[var(--text-primary)] mb-3">{t('footer.links')}</h4>
             <ul className="space-y-2 text-sm text-[var(--text-secondary)]">
               <li><a href="/productos" className="hover:text-[#00C8D7] transition-colors">{t('nav.pricing')}</a></li>
-              <li><a href="/#team" className="hover:text-[#00C8D7] transition-colors">{t('nav.team')}</a></li>
+              <li><a href="/#about" className="hover:text-[#00C8D7] transition-colors">{t('about.label')}</a></li>
               <li><a href="tel:6183659548" className="hover:text-[#00C8D7] transition-colors">{t('nav.contact')}</a></li>
               <li><a href="#" className="hover:text-[#00C8D7] transition-colors">{t('footer.privacy')}</a></li>
             </ul>
