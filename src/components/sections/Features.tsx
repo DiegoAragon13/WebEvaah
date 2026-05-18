@@ -2,13 +2,11 @@ import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
 import { Eye, Activity, Brain, Bell, MessageSquare, Battery } from 'lucide-react'
 
-type BentoRole = 'hero' | 'wide' | 'tall' | 'small'
-
 const cards: {
   key: 'f1' | 'f2' | 'f3' | 'f4' | 'f5' | 'f6'
   Icon: typeof Eye
   accent: string
-  role: BentoRole
+  role: 'hero' | 'wide' | 'tall' | 'small'
   stat?: string
   statLabel?: string
 }[] = [
@@ -19,15 +17,6 @@ const cards: {
   { key: 'f5', Icon: MessageSquare, accent: '#00C8D7', role: 'wide' },
   { key: 'f6', Icon: Battery,       accent: '#3EBF7A', role: 'small' },
 ]
-
-// On desktop (lg): true bento with fixed height
-// On mobile: all cards stack naturally, no fixed heights
-const desktopGrid: Record<BentoRole, string> = {
-  hero:  'lg:col-span-2 lg:row-span-2',
-  wide:  'lg:col-span-2',
-  tall:  'lg:row-span-2',
-  small: '',
-}
 
 export function Features() {
   const { t } = useTranslation()
@@ -51,15 +40,10 @@ export function Features() {
           </p>
         </div>
 
-        {/* Mobile: simple 1-col stack
-            Tablet (sm): 2-col grid, auto height
-            Desktop (lg): 3-col bento with fixed height */}
-        <div className="
-          grid gap-4
-          grid-cols-1
-          sm:grid-cols-2
-          lg:grid-cols-3 lg:grid-rows-3 lg:h-[640px]
-        ">
+        {/* Mobile: 1-col stack
+            Tablet (sm): 2-col, auto height — NO bento spans to avoid orphan cards
+            Desktop (lg): 3-col true bento with fixed height */}
+        <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 lg:grid-rows-3 lg:h-[640px]">
           {cards.map((card, i) => {
             const Icon = card.Icon
             const isHero = card.role === 'hero'
@@ -77,7 +61,9 @@ export function Features() {
                   bg-[var(--background-surface)]
                   overflow-hidden flex flex-col justify-between
                   transition-all duration-300 hover:shadow-xl
-                  ${desktopGrid[card.role]}
+                  ${card.role === 'hero'  ? 'lg:col-span-2 lg:row-span-2' : ''}
+                  ${card.role === 'wide'  ? 'lg:col-span-2' : ''}
+                  ${card.role === 'tall'  ? 'lg:row-span-2' : ''}
                   ${isHero ? 'min-h-[220px] lg:min-h-0' : 'min-h-[160px] lg:min-h-0'}
                 `}
                 style={isHero ? { borderColor: `${card.accent}40` } : {}}

@@ -1,7 +1,7 @@
 {
   "nav": {
     "product": "Producto",
-    "howItWorks": "Cómo funciona",
+    "howItWorks": "¿Cómo funciona?",
     "pricing": "Paquetes",
     "team": "Equipo",
     "contact": "Contacto",
@@ -30,7 +30,7 @@
     "stat3": { "value": "0 herramientas", "label": "Que combinen visión + monitoreo eléctrico portátil" }
   },
   "howItWorks": {
-    "title": "Cómo funciona",
+    "title": "¿Cómo funciona?",
     "step1": { "title": "Conecta el módulo", "desc": "Conecta el hardware NEMIKI al circuito mediante sondas de precisión pogo pin." },
     "step2": { "title": "Toma una foto", "desc": "ARGOS identifica componentes on-device sin necesidad de internet." },
     "step3": { "title": "Obtén el diagnóstico", "desc": "La IA analiza datos y entrega recomendaciones contextuales en segundos." }
@@ -89,7 +89,7 @@
     ]
   },
   "about": {
-    "label": "Quiénes somos",
+    "label": "¿Quiénes somos?",
     "headline": "El copiloto del técnico industrial.",
     "intro": "Nacimos de la industria mexicana para resolver el problema que más le cuesta: los paros no planificados.",
     "philosophy": "Filosofía",
