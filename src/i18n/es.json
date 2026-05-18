@@ -8,6 +8,7 @@
     "cart": "Carrito"
   },
   "hero": {
+    "badge": "Mantenimiento predictivo para la industria",
     "tagline": "Diagnóstico inteligente para circuitos. Sin adivinar.",
     "subtitle": "NEMIKI combina visión artificial, monitoreo eléctrico en tiempo real e IA generativa para que cualquier técnico diagnostique placas electrónicas en segundos.",
     "cta1": "Ver paquetes",
@@ -36,6 +37,8 @@
     "step3": { "title": "Obtén el diagnóstico", "desc": "La IA analiza datos y entrega recomendaciones contextuales en segundos." }
   },
   "features": {
+    "label": "Capacidades",
+    "subtitle": "Integradas desde el primer día en cada módulo NEMIKI.",
     "title": "Características clave",
     "f1": { "title": "ARGOS Vision", "desc": "Detección de componentes on-device sin internet con YOLOv8n." },
     "f2": { "title": "Monitoreo en tiempo real", "desc": "Voltaje, corriente, temperatura y vibración continuos." },

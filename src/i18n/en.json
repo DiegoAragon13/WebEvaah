@@ -8,6 +8,7 @@
     "cart": "Cart"
   },
   "hero": {
+    "badge": "Predictive maintenance for industry",
     "tagline": "Smart diagnostics for circuits. No guessing.",
     "subtitle": "NEMIKI combines computer vision, real-time electrical monitoring and generative AI so any technician can diagnose PCBs in seconds.",
     "cta1": "See pricing",
@@ -36,6 +37,8 @@
     "step3": { "title": "Get the diagnosis", "desc": "AI analyzes data and delivers contextual recommendations in seconds." }
   },
   "features": {
+    "label": "Capabilities",
+    "subtitle": "Built-in from day one in every NEMIKI module.",
     "title": "Key features",
     "f1": { "title": "ARGOS Vision", "desc": "On-device component detection without internet using YOLOv8n." },
     "f2": { "title": "Real-time monitoring", "desc": "Continuous voltage, current, temperature and vibration." },

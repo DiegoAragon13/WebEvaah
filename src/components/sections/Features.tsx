@@ -29,14 +29,14 @@ export function Features() {
         <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between mb-12 gap-4">
           <div>
             <span className="text-xs font-semibold tracking-widest uppercase text-[#00C8D7]">
-              Capacidades
+              {t('features.label')}
             </span>
             <h2 className="font-display font-extrabold text-4xl sm:text-5xl text-[var(--text-primary)] mt-2">
               {t('features.title')}
             </h2>
           </div>
           <p className="text-[var(--text-secondary)] text-sm leading-relaxed sm:max-w-xs">
-            Integradas desde el primer día en cada módulo NEMIKI.
+            {t('features.subtitle')}
           </p>
         </div>
 

@@ -139,7 +139,7 @@ export function Hero() {
               className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest uppercase text-[#00C8D7] bg-[#00C8D7]/10 border border-[#00C8D7]/20 rounded-full px-4 py-1.5 mb-6"
             >
               <span className="w-1.5 h-1.5 rounded-full bg-[#00C8D7] animate-pulse flex-shrink-0" />
-              <span className="truncate">Mantenimiento predictivo para la industria</span>
+              <span className="truncate">{t('hero.badge')}</span>
             </motion.div>
 
             <motion.h1
