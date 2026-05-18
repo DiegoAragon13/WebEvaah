@@ -13,13 +13,6 @@ export function Pricing() {
 
   const tiers = [
     {
-      id: 'kit', tier: 'kit' as const,
-      name: t('pricing.kit.name'), target: t('pricing.kit.target'),
-      price: t('pricing.kit.price'), priceNote: t('pricing.kit.priceNote'), priceNum: 2000,
-      features: t('pricing.kit.features', { returnObjects: true }) as string[],
-      highlight: false,
-    },
-    {
       id: 'b2b', tier: 'b2b' as const,
       name: t('pricing.b2b.name'), target: t('pricing.b2b.target'),
       price: t('pricing.b2b.price'), priceNote: t('pricing.b2b.priceNote'), priceNum: 2000,
@@ -51,7 +44,7 @@ export function Pricing() {
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch max-w-4xl mx-auto">
           {tiers.map((tier, i) => (
             <motion.div
               key={tier.id}
@@ -121,15 +114,7 @@ export function Pricing() {
           ))}
         </div>
 
-        {/* ROI note */}
-        <motion.p
-          initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}
-          transition={{ delay: 0.4 }}
-          className="text-center text-sm text-[var(--text-secondary)] mt-10"
-        >
-          Punto de equilibrio con solo <span className="text-[var(--text-primary)] font-semibold">15 módulos activos</span>.
-          Cada minuto de paro no planificado puede costar más de $10,000 USD.
-        </motion.p>
+
       </div>
     </section>
   )

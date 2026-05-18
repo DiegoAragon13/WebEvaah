@@ -61,7 +61,7 @@ export function Features() {
                   bg-[var(--background-surface)]
                   overflow-hidden flex flex-col
                   transition-all duration-300 hover:shadow-xl
-                  ${card.role === 'hero'  ? 'lg:col-span-2 lg:row-span-2 justify-between' : ''}
+                  ${card.role === 'hero'  ? 'lg:col-span-2 lg:row-span-2 justify-between' : 'justify-center'}
                   ${card.role === 'wide'  ? 'lg:col-span-2' : ''}
                   ${card.role === 'tall'  ? 'lg:row-span-2' : ''}
                   ${isHero ? 'min-h-[220px] lg:min-h-0' : 'min-h-0'}
