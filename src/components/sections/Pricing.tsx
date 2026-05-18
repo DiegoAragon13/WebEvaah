@@ -22,7 +22,7 @@ export function Pricing() {
     {
       id: 'b2b', tier: 'b2b' as const,
       name: t('pricing.b2b.name'), target: t('pricing.b2b.target'),
-      price: t('pricing.b2b.price'), priceNote: t('pricing.b2b.priceNote'), priceNum: 1500,
+      price: t('pricing.b2b.price'), priceNote: t('pricing.b2b.priceNote'), priceNum: 2000,
       features: t('pricing.b2b.features', { returnObjects: true }) as string[],
       highlight: true,
     },

@@ -59,12 +59,12 @@ export function Features() {
                   group relative rounded-3xl p-6 sm:p-7
                   border border-[var(--border-default)]
                   bg-[var(--background-surface)]
-                  overflow-hidden flex flex-col justify-between
+                  overflow-hidden flex flex-col
                   transition-all duration-300 hover:shadow-xl
-                  ${card.role === 'hero'  ? 'lg:col-span-2 lg:row-span-2' : ''}
+                  ${card.role === 'hero'  ? 'lg:col-span-2 lg:row-span-2 justify-between' : ''}
                   ${card.role === 'wide'  ? 'lg:col-span-2' : ''}
                   ${card.role === 'tall'  ? 'lg:row-span-2' : ''}
-                  ${isHero ? 'min-h-[220px] lg:min-h-0' : 'min-h-[160px] lg:min-h-0'}
+                  ${isHero ? 'min-h-[220px] lg:min-h-0' : 'min-h-0'}
                 `}
                 style={isHero ? { borderColor: `${card.accent}40` } : {}}
               >

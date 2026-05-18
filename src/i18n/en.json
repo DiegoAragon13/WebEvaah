@@ -55,14 +55,14 @@
       "name": "Direct Kit",
       "target": "Technicians & workshops",
       "price": "$2,000 MXN",
-      "priceNote": "+ $1,500 MXN/mo",
+      "priceNote": "first month (includes hardware), then $1,500/mo",
       "features": ["NEMIKI hardware module (ESP32-S3 + industrial sensors + OLED + probes)", "Mobile app included (ARGOS on-device, no internet needed)", "LLM + contextual RAG diagnostics", "Voltage, current, temperature & vibration monitoring", "Email support"]
     },
     "b2b": {
       "name": "B2B Cloud",
       "target": "Industrial plants",
-      "price": "$1,500 MXN/mo",
-      "priceNote": "per active module",
+      "price": "$2,000 MXN",
+      "priceNote": "first month (includes hardware), then $1,500/mo",
       "features": ["Everything in Direct Kit", "Multi-technician license (up to 10 users)", "Real-time web dashboard", "ARGOS Pro (Gemini Vision analysis)", "Unlimited history + advanced stats", "Weibull lifespan analysis", "Priority support"]
     },
     "enterprise": {
