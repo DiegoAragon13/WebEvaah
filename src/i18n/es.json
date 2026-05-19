@@ -24,6 +24,11 @@
       "critical": "Crítico"
     }
   },
+  "video": {
+    "label": "NEMIKI en acción",
+    "title": "Un paro de línea cuesta miles de dólares por hora",
+    "subtitle": "Anticípate al fallo con nosotros"
+  },
   "problem": {
     "title": "El problema",
     "stat1": { "value": "$50K–$500K MXN", "label": "Costo de un paro de producción" },

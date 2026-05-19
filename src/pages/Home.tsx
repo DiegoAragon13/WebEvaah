@@ -1,5 +1,6 @@
 import { Hero } from '../components/sections/Hero'
 import { Problem } from '../components/sections/Problem'
+import { VideoShowcase } from '../components/sections/VideoShowcase'
 import { ImageCarousel } from '../components/sections/ImageCarousel'
 import { HowItWorks } from '../components/sections/HowItWorks'
 import { Features } from '../components/sections/Features'
@@ -11,6 +12,7 @@ export function Home() {
     <>
       <Hero />
       <Problem />
+      <VideoShowcase />
       <ImageCarousel />
       <HowItWorks />
       <Features />
