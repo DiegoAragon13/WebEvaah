@@ -5,7 +5,6 @@ import { Play, Pause, Volume2, VolumeX, Maximize, X } from 'lucide-react'
 interface VideoPlayerProps {
   src: string
   poster?: string
-  title?: string
   className?: string
   autoPlay?: boolean
   loop?: boolean
@@ -14,7 +13,6 @@ interface VideoPlayerProps {
 export function VideoPlayer({ 
   src, 
   poster, 
-  title = 'Video', 
   className = '',
   autoPlay = false,
   loop = false

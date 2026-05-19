@@ -1,11 +1,7 @@
 import { motion } from 'framer-motion'
-import { useTranslation } from 'react-i18next'
 import { VideoPlayer } from '../ui/VideoPlayer'
-import videoSrc from '../../assets/videos/falloinfo.mp4'
 
 export function VideoShowcase() {
-  const { t } = useTranslation()
-
   return (
     <section className="py-20 bg-[var(--background-primary)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +30,7 @@ export function VideoShowcase() {
           className="max-w-4xl mx-auto"
         >
           <VideoPlayer 
-            src={videoSrc}
+            src="/src/assets/videos/falloinfo.mp4"
             autoPlay={false}
             loop={true}
             className="aspect-video shadow-2xl"
