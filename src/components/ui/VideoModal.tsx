@@ -1,25 +1,16 @@
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { X, Play } from 'lucide-react'
+import { X } from 'lucide-react'
 
 interface VideoModalProps {
   isOpen: boolean
   onClose: () => void
   videoSrc: string
   title?: string
+  isYouTube?: boolean
 }
 
-export function VideoModal({ isOpen, onClose, videoSrc, title }: VideoModalProps) {
-  const videoRef = useRef<HTMLVideoElement>(null)
-
-  // Pause video when modal closes
-  useEffect(() => {
-    if (!isOpen && videoRef.current) {
-      videoRef.current.pause()
-      videoRef.current.currentTime = 0
-    }
-  }, [isOpen])
-
+export function VideoModal({ isOpen, onClose, videoSrc, title, isYouTube = false }: VideoModalProps) {
   // Handle ESC key
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
@@ -76,13 +67,22 @@ export function VideoModal({ isOpen, onClose, videoSrc, title }: VideoModalProps
 
               {/* Video container */}
               <div className="relative bg-black rounded-2xl overflow-hidden shadow-2xl aspect-video">
-                <video
-                  ref={videoRef}
-                  src={videoSrc}
-                  controls
-                  autoPlay
-                  className="w-full h-full"
-                />
+                {isYouTube ? (
+                  <iframe
+                    src={videoSrc}
+                    title={title || 'Video'}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                ) : (
+                  <video
+                    src={videoSrc}
+                    controls
+                    autoPlay
+                    className="w-full h-full"
+                  />
+                )}
               </div>
             </motion.div>
           </div>

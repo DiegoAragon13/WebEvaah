@@ -92,8 +92,9 @@ export function Testimonial() {
       <VideoModal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        videoSrc="/testimonio.mp4"
+        videoSrc="https://www.youtube.com/embed/4_ReEmqNsME"
         title={`${t('testimonial.label')} - ${t('testimonial.author')}`}
+        isYouTube={true}
       />
     </>
   )
