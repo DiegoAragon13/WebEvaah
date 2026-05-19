@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { VideoPlayer } from '../ui/VideoPlayer'
 
 export function VideoShowcase() {
+  const { t } = useTranslation()
+
   return (
     <section className="py-20 bg-[var(--background-primary)]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -14,10 +17,14 @@ export function VideoShowcase() {
           className="text-center mb-12"
         >
           <h2 className="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-[var(--text-primary)] mb-4">
-            Un paro de línea cuesta <span className="text-[#00C8D7]">miles de dólares</span> por hora
+            {t('video.headline').split('miles de dólares').map((part, i) => 
+              i === 0 ? (
+                <span key={i}>{part}<span className="text-[#00C8D7]">miles de dólares</span></span>
+              ) : part
+            )}
           </h2>
           <p className="text-lg sm:text-xl text-[var(--text-secondary)] font-medium">
-            Anticípate al fallo con nosotros
+            {t('video.subtitle')}
           </p>
         </motion.div>
 
@@ -30,7 +37,7 @@ export function VideoShowcase() {
           className="max-w-4xl mx-auto"
         >
           <VideoPlayer 
-            src="/src/assets/videos/falloinfo.mp4"
+            src="/falloinfo.mp4"
             autoPlay={false}
             loop={true}
             className="aspect-video shadow-2xl"

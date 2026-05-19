@@ -31,9 +31,17 @@
   },
   "problem": {
     "title": "El problema",
+    "headline": "En México, un paro de línea cuesta hasta $500K MXN por hora.",
+    "context1": "Las industrias mexicanas siguen operando con mantenimiento correctivo: esperan a que algo se rompa para actuar. El diagnóstico depende de la experiencia del técnico y de instrumentos que solo miden, no interpretan.",
+    "context2": "NEMIKI cambia eso. Monitorea, interpreta y anticipa — antes de que la falla ocurra.",
+    "divider": "El problema que resolvemos",
     "stat1": { "value": "$50K–$500K MXN", "label": "Costo de un paro de producción" },
     "stat2": { "value": "Horas o días", "label": "Tiempo de diagnóstico manual" },
     "stat3": { "value": "0 herramientas", "label": "Que combinen visión + monitoreo eléctrico portátil" }
+  },
+  "video": {
+    "headline": "Un paro de línea cuesta miles de dólares por hora",
+    "subtitle": "Anticípate al fallo con nosotros"
   },
   "howItWorks": {
     "title": "¿Cómo funciona?",

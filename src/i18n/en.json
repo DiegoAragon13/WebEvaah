@@ -26,9 +26,17 @@
   },
   "problem": {
     "title": "The problem",
+    "headline": "In Mexico, a production line stoppage costs up to $500K MXN per hour.",
+    "context1": "Mexican industries still operate with corrective maintenance: they wait for something to break before acting. Diagnosis depends on the technician's experience and instruments that only measure, not interpret.",
+    "context2": "NEMIKI changes that. It monitors, interprets and anticipates — before the failure occurs.",
+    "divider": "The problem we solve",
     "stat1": { "value": "$50K–$500K MXN", "label": "Cost of a production stoppage" },
     "stat2": { "value": "Hours or days", "label": "Manual diagnosis time" },
     "stat3": { "value": "0 tools", "label": "That combine vision + portable electrical monitoring" }
+  },
+  "video": {
+    "headline": "A line stoppage costs thousands of dollars per hour",
+    "subtitle": "Anticipate failures with us"
   },
   "howItWorks": {
     "title": "How it works",

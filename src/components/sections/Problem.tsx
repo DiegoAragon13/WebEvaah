@@ -27,9 +27,9 @@ export function Problem() {
             {t('problem.title')}
           </span>
           <h2 className="font-display font-extrabold text-4xl sm:text-5xl lg:text-6xl text-[var(--text-primary)] mt-3 leading-tight max-w-3xl">
-            En México, un paro de línea cuesta hasta{' '}
-            <span className="text-[#F5A623]">$500K MXN</span>{' '}
-            por hora.
+            {t('problem.headline').split('$500K MXN')[0]}
+            <span className="text-[#F5A623]">$500K MXN</span>
+            {t('problem.headline').split('$500K MXN')[1]}
           </h2>
         </motion.div>
 
@@ -44,20 +44,17 @@ export function Problem() {
             transition={{ duration: 0.55, delay: 0.1 }}
           >
             <p className="text-[var(--text-secondary)] text-lg leading-relaxed">
-              Las industrias mexicanas siguen operando con mantenimiento correctivo:
-              esperan a que algo se rompa para actuar. El diagnóstico depende de la
-              experiencia del técnico y de instrumentos que solo miden, no interpretan.
+              {t('problem.context1')}
             </p>
             <p className="text-[var(--text-secondary)] text-lg leading-relaxed mt-4">
-              NEMIKI cambia eso. Monitorea, interpreta y anticipa — antes de que la
-              falla ocurra.
+              {t('problem.context2')}
             </p>
 
             {/* Divider with accent */}
             <div className="mt-8 flex items-center gap-3">
               <div className="h-px flex-1 bg-[var(--border-default)]" />
               <span className="text-xs font-semibold text-[#00C8D7] tracking-widest uppercase">
-                El problema que resolvemos
+                {t('problem.divider')}
               </span>
               <div className="h-px flex-1 bg-[var(--border-default)]" />
             </div>
