@@ -5,6 +5,7 @@ import { ImageCarousel } from '../components/sections/ImageCarousel'
 import { HowItWorks } from '../components/sections/HowItWorks'
 import { Features } from '../components/sections/Features'
 import { AboutUs } from '../components/sections/AboutUs'
+import { Testimonial } from '../components/sections/Testimonial'
 import { Pricing } from '../components/sections/Pricing'
 
 export function Home() {
@@ -17,6 +18,7 @@ export function Home() {
       <HowItWorks />
       <Features />
       <AboutUs />
+      <Testimonial />
       <Pricing />
     </>
   )

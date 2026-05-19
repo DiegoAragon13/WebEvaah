@@ -119,6 +119,14 @@
       "Become the standard for electronic diagnostics in Mexico's industrial hubs."
     ]
   },
+  "testimonial": {
+    "label": "Testimonials",
+    "title": "What our users say",
+    "quote": "NEMIKI transformed our maintenance approach. We now anticipate failures before they occur and have reduced unplanned downtime by 60%.",
+    "author": "Eng. Carlos Valenzuela",
+    "role": "Maintenance Manager, Industrial Plant",
+    "cta": "Watch full testimonial"
+  },
   "footer": {
     "tagline": "Smart diagnostics for electronic circuits.",
     "links": "Links",

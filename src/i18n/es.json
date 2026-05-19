@@ -124,6 +124,14 @@
       "Ser el estándar de diagnóstico electrónico en los polos industriales de México."
     ]
   },
+  "testimonial": {
+    "label": "Testimonios",
+    "title": "Lo que dicen nuestros usuarios",
+    "quote": "NEMIKI transformó nuestra forma de hacer mantenimiento. Ahora anticipamos fallas antes de que ocurran y hemos reducido los paros no planificados en un 60%.",
+    "author": "Ing. Carlos Valenzuela",
+    "role": "Jefe de Mantenimiento, Planta Industrial",
+    "cta": "Ver testimonio completo"
+  },
   "footer": {
     "tagline": "Diagnóstico inteligente para circuitos electrónicos.",
     "links": "Enlaces",
