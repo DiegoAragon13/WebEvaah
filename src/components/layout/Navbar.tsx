@@ -14,6 +14,9 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileOpen, setMobileOpen] = useState(false)
   const [cartPop, setCartPop] = useState(false)
+  const [langRotate, setLangRotate] = useState(0)
+  const [themeRotate, setThemeRotate] = useState(0)
+  const [pageTransition, setPageTransition] = useState(false)
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20)
@@ -35,9 +38,14 @@ export function Navbar() {
   }, [count])
 
   const toggleLang = () => {
-    const next = i18n.language === 'es' ? 'en' : 'es'
-    i18n.changeLanguage(next)
-    localStorage.setItem('nemiki-lang', next)
+    setLangRotate(prev => prev + 360)
+    setPageTransition(true)
+    setTimeout(() => {
+      const next = i18n.language === 'es' ? 'en' : 'es'
+      i18n.changeLanguage(next)
+      localStorage.setItem('nemiki-lang', next)
+      setTimeout(() => setPageTransition(false), 100)
+    }, 200)
   }
 
   const links = [
@@ -51,7 +59,21 @@ export function Navbar() {
   const handleLinkClick = () => setMobileOpen(false)
 
   return (
-    <motion.nav
+    <>
+      {/* Page transition overlay */}
+      <AnimatePresence>
+        {pageTransition && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            className="fixed inset-0 bg-[var(--background-primary)] z-[100] pointer-events-none"
+          />
+        )}
+      </AnimatePresence>
+
+      <motion.nav
       initial={{ y: -60, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -83,22 +105,33 @@ export function Navbar() {
 
         {/* Actions */}
         <div className="flex items-center gap-1 sm:gap-2">
-          <button
+          <motion.button
             onClick={toggleLang}
+            animate={{ rotate: langRotate }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
             aria-label="Toggle language"
             className="hidden sm:flex items-center gap-1 text-xs font-semibold text-[var(--text-secondary)] hover:text-[#00C8D7] transition-colors px-2 py-1 rounded-lg hover:bg-[var(--background-secondary)]"
           >
             <Languages size={15} />
             {i18n.language === 'es' ? 'EN' : 'ES'}
-          </button>
+          </motion.button>
 
-          <button
-            onClick={toggle}
+          <motion.button
+            onClick={() => {
+              setThemeRotate(prev => prev + 360)
+              setPageTransition(true)
+              setTimeout(() => {
+                toggle()
+                setTimeout(() => setPageTransition(false), 100)
+              }, 200)
+            }}
+            animate={{ rotate: themeRotate }}
+            transition={{ duration: 0.5, ease: "easeInOut" }}
             aria-label="Toggle theme"
             className="p-2 rounded-lg text-[var(--text-secondary)] hover:text-[#00C8D7] hover:bg-[var(--background-secondary)] transition-colors"
           >
             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-          </button>
+          </motion.button>
 
           <button
             onClick={() => navigate('/carrito')}
@@ -165,18 +198,21 @@ export function Navbar() {
 
               {/* Bottom actions */}
               <div className="p-6 border-t border-[var(--border-default)] flex items-center gap-3">
-                <button
+                <motion.button
                   onClick={toggleLang}
+                  animate={{ rotate: langRotate }}
+                  transition={{ duration: 0.5, ease: "easeInOut" }}
                   className="flex items-center gap-1.5 text-sm font-semibold text-[var(--text-secondary)] hover:text-[#00C8D7] transition-colors"
                 >
                   <Languages size={16} />
                   {i18n.language === 'es' ? 'English' : 'Español'}
-                </button>
+                </motion.button>
               </div>
             </motion.div>
           </>
         )}
       </AnimatePresence>
     </motion.nav>
+    </>
   )
 }
